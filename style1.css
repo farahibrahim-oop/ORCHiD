@@ -1,0 +1,118 @@
+*{
+    box-sizing:border-box
+}
+body{
+    width:100%;
+    margin:0;
+    padding: 0;
+    background-color:rgb(255, 255, 255);
+    place-items:center;
+
+}
+
+.ctr-accordion{
+    max-width:1200px;
+    height:500px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    align-content:space-around;
+    gap:20px;
+    overflow: hidden;
+    margin:150px auto;
+
+}
+.tab{
+    position:relative;
+    width:20%;
+    height:inherit;
+    padding:20px;
+    background: rgb(196, 196, 196);
+    cursor: pointer;
+    transition:width .5s ease;
+    border-radius:25px;
+
+}
+.tab img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:all 0.5s ease ;
+    border-radius:25px;
+    opacity:0.8;
+
+}
+.tab:hover img{
+    opacity:1;
+}
+
+.tab:hover{
+    width:80%
+}
+.row{
+    width:100%;
+    max-width:1450px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:50px;
+    overflow-x:hidden;
+    padding:4rem 0;
+
+}
+.row .imgWrapper{
+    overflow:hidden;
+}
+.row .imgWrapper img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.3s;
+left:30px;
+border-radius: 30px;
+}
+.row .imgWrapper:hover img{
+    transform:scale(1.25);
+    
+    
+}
+.row .contentWrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-left:30px;
+}
+.row .contentWrapper span.textWrapper{
+    display:block;
+    font-size:20px;
+    text-transform:capitalize;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+
+}
+.row .contentWrapper h2{
+    font-size:40px;
+    font-weight:400;
+    padding-bottom:20px;
+    color:rgb(100, 63, 63);
+    font-family:'Times New Roman', Times, serif
+}
+.row .contentWrapper p{
+    line-height:29px;
+    font-size:18px;
+    padding-bottom:25px;
+}
+.gh{
+    font-size:40px;
+    font-weight:400;
+    padding-bottom:20px;
+    color:rgb(100, 63, 63);
+    font-family:'Times New Roman', Times, serif;
+
+}
