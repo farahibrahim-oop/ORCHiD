@@ -315,3 +315,7 @@ footer .copyright{
     font-size: 40px;
     font-weight: 400;
 }
+::selection{
+    background-color: #b9c7ff;
+    color: rgb(255, 255, 239);
+  }

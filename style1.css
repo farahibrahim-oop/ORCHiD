@@ -22,6 +22,10 @@ body{
     margin:100px auto;
 
 }
+::selection{
+    background-color: #b9c7ff;
+    color: rgb(255, 255, 239);
+  }
 .tab{
     position:relative;
     width:20%;
